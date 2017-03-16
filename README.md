@@ -1,6 +1,3 @@
-# workshop
-Universidad Católica de Colombia code projects
-
 ### about the repository
 In this repository I'm gonna put and comment my own code projects for the asignatures i'm coursing.
 
