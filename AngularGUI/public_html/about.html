@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <!-- Basic Page Needs
+        ================================================== -->
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="icon" type="image/png" href="images/icons/favicon.ico">
+        <title>Inalpes - Inmobiliaria lider del mercado</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Template CSS Files
+        ================================================== -->
+        <!-- Twitter Bootstrs CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Ionicons Fonts Css -->
+        <link rel="stylesheet" href="css/ionicons.min.css">
+        <!-- animate css -->
+        <link rel="stylesheet" href="css/animate.css">
+        <!-- Hero area slider css-->
+        <link rel="stylesheet" href="css/slider.css">
+        <!-- owl craousel css -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.theme.css">
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+        <!-- template main css file -->
+        <link rel="stylesheet" href="css/main.css">
+        <!-- responsive css -->
+        <link rel="stylesheet" href="css/responsive.css">
+
+        <!-- Template Javascript Files
+        ================================================== -->
+        <!-- modernizr js -->
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <!-- jquery -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <!-- owl carouserl js -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- bootstrap js -->
+
+        <script src="js/bootstrap.min.js"></script>
+        <!-- wow js -->
+        <script src="js/wow.min.js"></script>
+        <!-- slider js -->
+        <script src="js/slider.js"></script>
+        <script src="js/jquery.fancybox.js"></script>
+        <!-- template main js -->
+        <script src="js/main.js"></script>
+    </head>
+    <body>                
+        <!-- 
+        ================================================== 
+            Company Description Section Start
+        ================================================== -->
+        <section class="company-description">
+            <div class="container">
+                <div class="row"> 
+                    <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+                        <img src="images/about/about-company.jpg" alt="">
+                    </div>
+                    <div class="block" style="background-color: #c4e3f3">
+                        <h3>Bienvenido al menú de inmuebles, ¿Que desea realizar?</h3>                                                
+                        <button class="fadeInUp animated btn btn-default" onclick="hideOne()">Registro</button>
+                        <button class="fadeInUp animated btn btn-default" onclick="hideTwo()">Busqueda</button>
+                    </div>
+                </div>
+            </div>            
+        </section>
+        <!-- 
+        ================================================== 
+            Team Section Start
+        ================================================== -->
+        <section id="team" style="display:none">
+            <div class="container">
+                <div class="row">
+                    <h2 class="subtitle text-center">Registro de inmuebles</h2>
+                    <div class="col-md-2">
+                        <div>
+                            <h3 class="team_name">Tipo de inmueble</h3>
+                            <div>
+                                <input type="radio" itemid="Casa" class="bottom-right" name="inmType" id="inmType">Casa<br>
+                                <input type="radio" itemid="Apartamento" class="bottom-right" name="inmType" id="inmType">Apartamento<br>
+                                <input type="radio" itemid="Oficina" class="bottom-right" name="inmType" id="inmType">Oficina<br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="block wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".5s">
+                            <h3 class="team_name">Tipo de Servicio</h3>
+                            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
+                                <input type="radio" itemid="Arriendo" class="bottom-right" name="srvType" id="srvType">Arriendo<br>
+                                <input type="radio" itemid="Venta" class="bottom-right" name="srvType" id="srvType">Venta<br>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="block">
+                            <h3 class="team_name wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Agregue fotografias de su inmueble</h3>
+
+                            <div class="contact-form">
+                                <form id="clients" method="post" action="sendmail.php" role="form">
+
+                                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1s">
+                                        <input type="file" class="form-control" name="photos" id="photos">
+                                    </div>
+                                                          
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="block">
+                            <h3 class="team_name wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Datos de propiedad</h3>
+                            <!-- <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
+                                Deja tus datos. Pronto, nos pondremos en contacto contigo. 
+                            </p>-->
+                            <div class="contact-form">
+                                <form id="clients" method="post" action="sendmail.php" role="form">
+
+                                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
+                                        <input type="text" placeholder="Tipo de Documento" class="form-control" name="document" id="document">
+                                        <!-- Must be a combo box -->
+                                    </div>
+
+                                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".8s">
+                                        <input type="number" placeholder="Numero de identificacion" class="form-control" name="identification" id="identification" >
+                                    </div>
+
+                                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1s">
+                                        <input type="text" placeholder="Cedula catastral del inmueble" class="form-control" name="catastral" id="catastral">
+                                    </div>
+
+                                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.2s">
+                                        <textarea rows="6" placeholder="Describa brevemente el inmueble" class="form-control" name="description" id="description"></textarea>
+                                    </div>
+                                    <!--
+                                    <div id="submit" class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.4s">
+                                        <input type="submit" id="contact-submit" class="btn btn-group-justified btn-send" value="¡Enviar!">
+                                        <input type="submit" id="clean-form" class="btn btn-group-justified btn-green" value="Limpiar">
+                                    </div>                      
+                                    -->
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--
+                    <div class="col-md-3">
+                        <div class="team-member wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".7s">
+                            <div class="team-img">
+                                <img src="images/team/team-3.jpg" class="team-pic" alt="">
+                            </div>
+                            <h3 class="team_name">Deu John</h3>
+                            <p class="team_designation">CEO, Project Manager</p>
+                            <p class="team_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore .</p>
+                            <p class="social-icons">
+                                <a href="#" class="facebook" target="_blank"><i class="ion-social-facebook-outline"></i></a>
+                                <a href="#" target="_blank"><i class="ion-social-twitter-outline"></i></a>
+                                <a href="#" target="_blank"><i class="ion-social-linkedin-outline"></i></a>
+                                <a href="#" target="_blank"><i class="ion-social-googleplus-outline"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                    -->
+
+
+                    <div class="col-md-4">
+                        <div class="block">
+                            <h3 class="team_name wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Datos de Ubicación</h3>
+                            <!-- <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
+                                Deja tus datos. Pronto, nos pondremos en contacto contigo. 
+                            </p>-->
+                            <div class="contact-form">
+                                <form id="clients" method="post" action="sendmail.php" role="form">
+
+                                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
+                                        <input type="text" placeholder="Ciudad" class="form-control" name="city" id="city">
+
+                                    </div>
+
+                                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".8s">
+                                        <input type="number" placeholder="Zona" class="form-control" name="zone" id="zone" >
+                                    </div>
+
+                                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1s">
+                                        <input type="text" placeholder="Direccion" class="form-control" name="address" id="address">
+                                    </div>
+
+                                    <!--
+                                    <div id="submit" class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.4s">
+                                        <input type="submit" id="contact-submit" class="btn btn-group-justified btn-send" value="¡Enviar!">
+                                        <input type="submit" id="clean-form" class="btn btn-group-justified btn-green" value="Limpiar">
+                                    </div>                      
+                                    -->
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="block">
+                            <h3 class="team_name wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Datos de construcción</h3>
+
+                            <div class="contact-form">
+                                <form id="clients" method="post" action="sendmail.php" role="form">
+
+                                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
+                                        <input type="text" placeholder="Area Construida" class="form-control" name="buildedarea" id="buildedarea">
+
+                                    </div>
+
+                                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".8s">
+                                        <input type="number" placeholder="Area Privada" class="form-control" name="privateArea" id="privateArea" >
+                                    </div>
+
+                                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1s">
+                                        <input type="text" placeholder="Cant. habitaciones" class="form-control" name="rooms" id="rooms">
+                                    </div>
+
+                                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1s">
+                                        <input type="text" placeholder="Cant. habitaciones" class="form-control" name="rooms" id="rooms">
+                                    </div>
+
+                                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1s">
+                                        <input type="number" placeholder="Cant. de pisos" class="form-control" name="floor" id="floor">
+                                    </div>
+
+                                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1s">
+                                        <input type="number" placeholder="Cant. de baños" class="form-control" name="bath" id="baths">
+                                    </div>
+
+                                    <!--
+                                    <div id="submit" class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.4s">
+                                        <input type="submit" id="contact-submit" class="btn btn-group-justified btn-send" value="¡Enviar!">
+                                        <input type="submit" id="clean-form" class="btn btn-group-justified btn-green" value="Limpiar">
+                                    </div>                      
+                                    -->
+                                </form>
+                            </div>
+                            <div id="submit" class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.4s">
+                <input type="button" style="background-color: #00A4BA" id="contact-submit" class="btn btn-group-justified " value="Guardar"><br>
+                <input type="button" style="background-color: #00B0C7" id="clean-form" class="btn btn-group-justified " value="Cancelar">
+            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <!--
+        ==================================================
+        Clients Section Start
+        ================================================== -->
+        <section id="search" style="display:none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="subtitle text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Búsqueda de Inmuebles</h2>
+                        <p class="subtitle-des text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">Ingresar a continuación los criterios de busqueda.</p>
+                        <div id="clients-logo" class="owl-carousel">
+                            <h3 class="team_name">Tipo de inmueble</h3>
+                            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
+                                <input type="checkbox" itemid="Casa" class="bottom-right" name="name" id="name">Casa<br>
+                                <input type="checkbox" itemid="Apartamento" class="bottom-right" name="name" id="name">Apartamento<br>
+                                <input type="checkbox" itemid="Oficina" class="bottom-right" name="name" id="name">Oficina
+                            </div>
+                            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
+                                        <input type="text" placeholder="Ciudad" class="form-control" name="city" id="city"><br>
+                                        <input type="number" placeholder="Zona" class="form-control" name="zone" id="zone" >
+
+                            </div>
+                            
+      
+                            <!--
+                            <h3 class="team_name">Tipo de Servicio</h3>
+                            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
+                                <input type="checkbox" itemid="Venta" class="bottom-right" name="name" id="name">Venta<br>
+                                <input type="checkbox" itemid="Arriendo" class="bottom-right" name="name" id="name">Arriendo<br> 
+                            </div>
+                            -->
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="col-md-4">
+                        <div class="block">
+                            <div class="contact-form">
+                                <form id="clients" method="post" action="sendmail.php" role="form">
+                                    <h3 class="team_name" data-wow-duration="500ms" data-wow-delay=".3s">Tipo de servicio</h3>
+
+                                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
+                                        <input type="radio" itemid="Venta" class="bottom-right" name="name" id="TypSer">Venta<br>
+                                        <input type="radio" itemid="Arriendo" class="bottom-right" name="name" id="TypSer">Arriendo<br> 
+                                    </div>
+
+                                    <div id="submit" class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.4s">
+                                        <input type="submit" id="contact-submit" class="btn btn-group-justified" style="background-color: #31b0d5" value="Buscar">
+                                        <input type="submit" id="clean-form" class="btn btn-group-justified " style="background-color: #269abc" value="Limpiar">
+                                    </div>  
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <script>
+            function hideOne() {
+                var x = document.getElementById('team');
+                if (x.style.display === 'none') {
+                    x.style.display = 'block';
+                } else {
+                    x.style.display = 'none';
+                }
+                var y = document.getElementById('search');
+                if (y.style.display === 'block') {
+                    y.style.display = 'none';
+                } else {
+                    y.style.display = 'none';
+                }
+            }
+            
+            function hideTwo() {
+                var x = document.getElementById('search');
+                if (x.style.display === 'none') {
+                    x.style.display = 'block';
+                } else {
+                    x.style.display = 'none';
+                }
+                var y = document.getElementById('team');
+                if (y.style.display === 'block') {
+                    y.style.display = 'none';
+                } else {
+                    y.style.display = 'none';
+                }
+            }
+        </script>
+    </body>
+</html>
