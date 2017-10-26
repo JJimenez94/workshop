@@ -9,6 +9,8 @@ In this repository I'm gonna put and comment my own code projects for the asigna
 
 #### Software's engineering
   5. AngularGUI: Implements a basic interface for an information system of a real state agency **Coded in JavaScript using Angular CLI 1.0.3, IDE: Netbeans 8.1**.
-  
+
+#### Software's architecture
+  6. ConceptRest: Implements a basic Restful Service in Wildfly server printing a sample string **Coded in Java 8, IDE: Eclipse Neon 3**.
 
 ###### DISCLAIMER: if you wanna take my codesource you can do it as is, i'm not made responsible of some harm relationed about it, i'm gonna be grateful for your mention to my work if you take the codesource, all the projects contained on this repository are made for academic purposes.
